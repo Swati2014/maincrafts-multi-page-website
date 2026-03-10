@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Submissions</title>
+</head>
+
+<body>
+
+<h1>All Contact Submissions</h1>
+
+<ul id="list"></ul>
+
+<script>
+
+  let submissions = JSON.parse(localStorage.getItem("contacts")) || [];
+
+  let list = document.getElementById("list");
+
+  submissions.forEach(function(data){
+
+      let li = document.createElement("li");
+
+      li.textContent = data.name + " - " + data.email + " - " + data.message;
+
+      list.appendChild(li);
+
+  });
+
+</script>
+
+</body>
+</html>
