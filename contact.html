@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - MainCrafts</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">MainCrafts</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<nav class="navbar">
+  <div class="logo">MainCrafts</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
 <section class="contact-section">
-  <div class="container">
-    <h1>Contact Us</h1>
 
-    <form id="contactForm" onsubmit="return validateForm()">
-      <input type="text" id="name" placeholder="Enter your name">
-      <input type="email" id="email" placeholder="Enter your email">
-      <textarea id="message" placeholder="Enter your message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+  <h1>Contact Us</h1>
+
+  <form id="contactForm" class="contact-form">
+
+    <label>Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label>Message</label>
+    <textarea id="message" placeholder="Enter your message"></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
 </section>
+
+<a href="submissions.html">View Submissions</a>
 
 <script src="script.js"></script>
 
